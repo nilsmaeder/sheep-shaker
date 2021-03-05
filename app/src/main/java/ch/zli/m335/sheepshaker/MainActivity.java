@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             vibration.vibrate(500);
         }
+        //Copied code ends here
     }
 
     //Code copied partially from https://www.tutorialspoint.com/how-to-detect-shake-event-in-android-app
@@ -116,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
             mAccelCurrent = (float) Math.sqrt((double) (x * x + y * y + z * z));
             float delta = mAccelCurrent - mAccelLast;
             mAccel = mAccel * 0.9f + delta;
+            //Copied code ends here
             //Execute if the user shakes the device:
             if (mAccel > 3) {
                 //If you set if(mAccel > (numberbelow9)) the program in this case detects a shaking event 11 times upon startup
